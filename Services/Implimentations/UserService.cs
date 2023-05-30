@@ -16,6 +16,7 @@ namespace DAUinfo.Services.Implimentations
         {
             _dbContext = dbContext;
         }
+        [HttpPost("addUser")]
         public async Task<User> AddUser(User user)
         {
             try
